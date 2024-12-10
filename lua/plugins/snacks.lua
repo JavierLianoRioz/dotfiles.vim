@@ -8,6 +8,7 @@ return {
     dashboard = {
       sections = {
         { section = "header" },
+        { section = "recent_files", cwd = true, limit = 8, padding = 1 },
         {
           pane = 2,
           section = "terminal",
@@ -106,7 +107,7 @@ return {
       desc = "Lazygit Current File History",
     },
     {
-      "<leader>gg",
+      "<leader>G",
       function()
         Snacks.lazygit()
       end,
